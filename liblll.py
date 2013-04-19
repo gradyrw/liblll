@@ -248,8 +248,17 @@ def lll_reduction(n, lc=Fraction(3, 4)):
     mu = [ [Fraction(0) for j in range(col) ] for i in range(row)]
     g = [ [n[i][j] for j in range(col) ] for i in range(row)]
     B = [ Fraction(0) for j in range(row) ]
-
+    
+    print m
+    print mu
+    print g
+    print B
+    print "-------------------"
     gram_schmidt(g, m, mu, B)
+    print m
+    print mu
+    print g
+    print B
 
     # k = 2
     k = 1
